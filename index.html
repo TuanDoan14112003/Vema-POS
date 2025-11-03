@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vema POS - Quản Lý Bán Hàng Thông Minh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .logo {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #110057;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature {
+            padding: 20px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            color: #110057;
+            margin-bottom: 10px;
+        }
+
+        .support-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1em;
+        }
+
+        .contact-item span {
+            font-weight: bold;
+            color: #110057;
+        }
+
+        .download-section {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #110057 0%, #440099 100%);
+            color: white;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: #110057;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2em;
+            }
+
+            .tagline {
+                font-size: 1em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">VEMA POS</div>
+            <div class="tagline">Quản Lý Bán Hàng Thông Minh Bằng Giọng Nói</div>
+        </header>
+
+        <div class="content">
+            <h2>Giới Thiệu</h2>
+            <p style="font-size: 1.1em; margin-bottom: 20px;">
+                Vema POS là giải pháp quản lý bán hàng hiện đại, giúp bạn tạo và theo dõi đơn hàng một cách nhanh chóng và tiện lợi.
+                Với công nghệ nhận diện giọng nói tiên tiến, bạn chỉ cần nói "Vema ơi" để bắt đầu tạo đơn hàng.
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎤</div>
+                    <h3>Giọng Nói</h3>
+                    <p>Tạo đơn hàng nhanh chóng bằng giọng nói. Chỉ cần nói "Vema ơi" để kích hoạt.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📋</div>
+                    <h3>Quản Lý Đơn Hàng</h3>
+                    <p>Theo dõi và quản lý đơn hàng dễ dàng với giao diện trực quan.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Lịch Sử</h3>
+                    <p>Xem lại toàn bộ lịch sử đơn hàng và phân tích dữ liệu bán hàng.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Bảo Mật</h3>
+                    <p>Dữ liệu được bảo vệ an toàn. Chỉ ghi âm sau khi phát hiện từ kích hoạt.</p>
+                </div>
+            </div>
+
+            <div class="support-section">
+                <h2>Hỗ Trợ & Liên Hệ</h2>
+                <p style="margin-bottom: 20px;">
+                    Bạn cần hỗ trợ hoặc có câu hỏi về ứng dụng? Đội ngũ của chúng tôi luôn sẵn sàng giúp đỡ bạn!
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>📧 Email:</span> support@vemapos.vn
+                    </div>
+                    <div class="contact-item">
+                        <span>🌐 Website:</span> https://vemapos.vn
+                    </div>
+                    <div class="contact-item">
+                        <span>⏰ Giờ làm việc:</span> Thứ 2 - Thứ 6, 9:00 - 18:00
+                    </div>
+                </div>
+            </div>
+
+            <h2>Hướng Dẫn Sử Dụng</h2>
+            <ol style="font-size: 1.1em; margin-left: 20px; margin-top: 20px; line-height: 2;">
+                <li>Tải và cài đặt ứng dụng Vema POS từ App Store</li>
+                <li>Cấp quyền sử dụng microphone khi được yêu cầu</li>
+                <li>Nhấn nút microphone trên màn hình chính</li>
+                <li>Nói "Vema ơi" để kích hoạt nhận diện giọng nói</li>
+                <li>Nói đơn hàng của bạn, ví dụ: "một cà phê sữa đá"</li>
+                <li>Ứng dụng sẽ tự động tạo đơn hàng cho bạn</li>
+            </ol>
+        </div>
+
+        <div class="download-section">
+            <h2 style="color: white; margin-bottom: 20px;">Tải Ngay Hôm Nay</h2>
+            <p style="font-size: 1.2em; margin-bottom: 20px;">
+                Trải nghiệm quản lý bán hàng hiện đại và thông minh
+            </p>
+            <a href="https://apps.apple.com/app/vemapos" class="download-btn">
+                📱 Tải trên App Store
+            </a>
+        </div>
+
+        <div class="content">
+            <h2>Câu Hỏi Thường Gặp</h2>
+            <div style="margin-top: 20px;">
+                <h3 style="color: #110057; margin: 20px 0 10px;">Ứng dụng có miễn phí không?</h3>
+                <p>Vema POS hiện đang cung cấp miễn phí cho tất cả người dùng.</p>
+
+                <h3 style="color: #110057; margin: 20px 0 10px;">Dữ liệu của tôi có được bảo mật không?</h3>
+                <p>Chúng tôi cam kết bảo vệ dữ liệu của bạn. Microphone chỉ hoạt động sau khi phát hiện từ kích hoạt "Vema ơi" và tất cả dữ liệu được mã hóa khi truyền tải.</p>
+
+                <h3 style="color: #110057; margin: 20px 0 10px;">Tôi có thể sử dụng ứng dụng offline không?</h3>
+                <p>Tính năng nhận diện giọng nói cần kết nối internet. Tuy nhiên, bạn vẫn có thể tạo đơn hàng thủ công khi offline.</p>
+
+                <h3 style="color: #110057; margin: 20px 0 10px;">Ứng dụng hỗ trợ những loại hình kinh doanh nào?</h3>
+                <p>Vema POS phù hợp với mọi loại hình kinh doanh: cửa hàng bán lẻ, nhà hàng, quán café, cửa hàng thực phẩm và các doanh nghiệp vừa và nhỏ.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Vema POS. Tất cả quyền được bảo lưu.</p>
+            <p style="margin-top: 10px;">Phát triển với ❤️ tại Việt Nam</p>
+        </footer>
+    </div>
+</body>
+</html>
